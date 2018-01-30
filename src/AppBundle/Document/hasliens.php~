@@ -1,0 +1,30 @@
+<?php
+
+namespace  AppBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+use Doctrine\ODM\MongoDB\Mapping\Annotations\Id;
+
+/**
+  * @MongoDB\Document
+ */
+
+class hasliens
+{
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $codecis;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $Lienpagesavis;
+
+
+}

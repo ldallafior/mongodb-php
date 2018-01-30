@@ -1,0 +1,51 @@
+<?php
+
+namespace AppBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+use Doctrine\ODM\MongoDB\Mapping\Annotations\Id;
+
+
+/**
+ * @MongoDB\Document
+ */
+class cishassmr
+{
+
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Field(type="string") @MongoDB\Index(unique=true, order="asc")
+     */
+    protected $codecis ;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $codedossierhas;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $motifevaluation;
+
+     /**
+      * @MongoDB\Field(type="string")
+      */
+    protected $transparence ;
+
+     /**
+      * @MongoDB\Field(type="string")
+      */
+    protected $valeursmr ;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $Libellesmr  ;
+
+}
+

@@ -1,0 +1,36 @@
+<?php
+
+namespace AppBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+use Doctrine\ODM\MongoDB\Mapping\Annotations\Id;
+
+
+/**
+ * @MongoDB\Document
+ */
+class cisgener
+
+{
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $princeps ;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $generique ;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $numero  ;
+
+
+}
